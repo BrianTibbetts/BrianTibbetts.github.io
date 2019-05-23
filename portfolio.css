@@ -1,6 +1,18 @@
+body {
+	font-family: sans-serif;
+	background-color: white;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
 /* navigation bar */
 
 nav.top {
+	padding-top: 1%;
+	padding-bottom: 1%;
 	top: 0;
 	width: 100%;
 	position: fixed;
@@ -10,12 +22,13 @@ nav.top {
 }
 
 nav a {
-	padding: 2%;
+	padding: 1%;
 }
 
 nav a:hover{
 	background-color: #92CA91;
 }
+
 
 /* projects image gallery */
 #projects {
@@ -37,29 +50,52 @@ td.thirds {
 	width: 33.333%;
 }
 
-/* about me personal bio*/
+td.thirds:hover {
+	opacity: 0.5;
+}
+
+/* about me: personal bio*/
 #about {
 	display: block;
+}
+
+h1, h2#quote {
 	text-align: center;
-	padding-bottom: 5%;
+}
+
+h2#quote{
+	font-style: italic;
 }
 
 img.portrait {
 	width: 50%;
 	float: right;
+	padding-bottom: 5%;
 }
 
 /* contact information with social media links */
 #contact{
 	display: block;
+	width: 100%;
 	clear: both;
+	border-top: 3px solid black;
 }
 
-p#address{
+#contact h2 {
+	padding: 1%;
+}
+
+p#address {
 	float: left;
+	padding: 1%;
 }
 
 img.icon {
 	width: 4%;
 	float: right;
+	padding: 1%;
+}
+
+img.icon:hover {
+	opacity: 0.5;
 }
