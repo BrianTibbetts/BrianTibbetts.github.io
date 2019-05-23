@@ -1,0 +1,65 @@
+/* navigation bar */
+
+nav.top {
+	top: 0;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	overflow: hidden;
+	background-color: white;
+}
+
+nav a {
+	padding: 2%;
+}
+
+nav a:hover{
+	background-color: #92CA91;
+}
+
+/* projects image gallery */
+#projects {
+	display: block;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+tr, table tr img {
+	width: 100%;
+}
+
+td {
+	text-align: center;
+	background-color: #92CA91;
+}
+
+td.thirds {
+	width: 33.333%;
+}
+
+/* about me personal bio*/
+#about {
+	display: block;
+	text-align: center;
+	padding-bottom: 5%;
+}
+
+img.portrait {
+	width: 50%;
+	float: right;
+}
+
+/* contact information with social media links */
+#contact{
+	display: block;
+	clear: both;
+}
+
+p#address{
+	float: left;
+}
+
+img.icon {
+	width: 4%;
+	float: right;
+}
