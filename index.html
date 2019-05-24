@@ -10,14 +10,21 @@
 	<a href="#about">About Me</a>
 	<a href="#contact">Contact</a>
 </nav>
-<!--Project table-->
+
+<!--Project gallery-->
 <table id="projects">
 	<tr>
-		<td class="thirds"><a href="#"><img src="images/architecture.jpg"></img>My Office</a></td>
-		<td class="thirds"><a href="#"><img src="images/spacestation.jpg"></img>In Space</a></td>
-		<td class="thirds"><a href="#"><img src="images/dog.jpg"></img>Pets at Work</a></td>
+		<td class="thirds"><img src="images/architecture.jpg" onclick="showOverlay(this.src)"></img>My Office</td>
+		<td class="thirds"><img src="images/spacestation.jpg" onclick="showOverlay(this.src)"></img>In Space</td>
+		<td class="thirds"><img src="images/dog.jpg" onclick="showOverlay(this.src)"></img>Pets at Work</td>
 	</tr>
 </table>
+
+<div id="overlay">
+	<span id="close" onclick="hideOverlay()">X</span>
+	<img id="expanded" src=""></img>
+</div>
+
 <!--Personal info paragraphs-->
 <div id="about">
 	<img class="portrait" src="images/johndoe.jpg" alt="John Doe"></img>
@@ -29,6 +36,7 @@
 		tempor incididunt ut labore et dolore magna aliqua.
 	</p>
 </div>
+
 <!--Contact information-->
 <div id="contact">
 	<h2>Contact Me:</h2>
@@ -43,6 +51,8 @@
 	<a href="http://twitter.com"><img class="icon" src="images/twitter.png"></img></a>
 	<a href="http://instagram.com"><img class="icon" src="images/instagram.png"></img></a>
 </div>
+
+<script src="overlay.js"></script>
 
 </body>
 </html>
